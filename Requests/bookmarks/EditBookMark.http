@@ -1,0 +1,9 @@
+@host = http://localhost:3000
+
+Patch {{host}}/bookmarks/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjksImVtYWlsIjoic2hlZEBtYWlsLmNvbSIsImlhdCI6MTY4OTQ4ODM5OCwiZXhwIjoxNjg5NDkxOTk4LCJhdWQiOiJCb29rbWFyay1mcm9udGVuZCIsImlzcyI6IkJvb2ttYXJrLWJhY2tlbmQifQ.h2k_PpUGAPEnGGnMfu4zC3JOhPBeX1yDMKJJwpl26xI
+Content-Type: application/json
+
+{
+  "link": "http://solarmovie.com"
+}

@@ -1,0 +1,9 @@
+@host = http://localhost:3000
+
+Patch {{host}}/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoic2hlZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk0NzcwMjYsImV4cCI6MTY4OTQ4MDYyNiwiYXVkIjoiQm9va21hcmstZnJvbnRlbmQiLCJpc3MiOiJCb29rbWFyay1iYWNrZW5kIn0.Rkx_7kMD5OLIDlOIs6yjJ7426ye3BuC7wmYuNZEeT14
+Content-Type: application/json
+
+{
+  "lastname": 33
+}

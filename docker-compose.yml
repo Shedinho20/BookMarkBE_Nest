@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  dev-db:
+    image: postgres:13
+    ports:
+      - $NEXTJS_DEV_APP_DOCKER_PORT:$POSTGRES_DEV_APP_DOCKER_PORT
+    environment:
+      POSTGRES_USER: $POSTGRES_DEV_APP_DOCKER_USER
+      POSTGRES_PASSWORD: $POSTGRES_DEV_APP_DOCKER_PASSOWRD
+      POSTGRES_DB: $POSTGRES_DEV_APP_DOCKER_DATABASE
+    networks:
+      - dafault
+  test-db:
+    image: postgres:13
+    ports:
+      - $NEXTJS_TEST_APP_DOCKER_PORT:$POSTGRES_DEV_APP_DOCKER_PORT
+    environment:
+      POSTGRES_USER: $POSTGRES_DEV_APP_DOCKER_USER
+      POSTGRES_PASSWORD: $POSTGRES_DEV_APP_DOCKER_PASSOWRD
+      POSTGRES_DB: $POSTGRES_DEV_APP_DOCKER_DATABASE
+    networks:
+      - dafault
+networks:
+  dafault:

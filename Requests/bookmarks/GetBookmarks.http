@@ -1,0 +1,4 @@
+@host = http://localhost:3000
+
+Get {{host}}/bookmarks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjYsImVtYWlsIjoic2hlZEBzZ21haWwuY29tIiwiZmlyc3RuYW1lIjpudWxsLCJsYXN0bmFtZSI6bnVsbCwiaWF0IjoxNjg5NTIwMTgwLCJleHAiOjE2ODk1MjM3ODAsImF1ZCI6IkJvb2ttYXJrLWZyb250ZW5kIiwiaXNzIjoiQm9va21hcmstYmFja2VuZCJ9.VHw323uQ2bWW57grW1oHhUDwBb2wXY1G5hDDzrHd2_U
